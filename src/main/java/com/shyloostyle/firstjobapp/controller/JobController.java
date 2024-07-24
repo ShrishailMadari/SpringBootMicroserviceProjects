@@ -1,5 +1,6 @@
 package com.shyloostyle.firstjobapp.controller;
 
+import com.shyloostyle.firstjobapp.Entity.Job;
 import com.shyloostyle.firstjobapp.service.JobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

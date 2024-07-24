@@ -1,6 +1,6 @@
 package com.shyloostyle.firstjobapp.service;
 
-import com.shyloostyle.firstjobapp.controller.Job;
+import com.shyloostyle.firstjobapp.Entity.Job;
 
 import java.util.List;
 

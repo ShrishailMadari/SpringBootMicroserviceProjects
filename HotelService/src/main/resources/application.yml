@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices  # URL of the PostgreSQL database
+    username: postgres
+    # Your PostgreSQL username
+    password: pass@123  # Your PostgreSQL password
+    driver-class-name: org.postgresql.Driver  # PostgreSQL driver class name
+    hikari:
+      maximum-pool-size: 10  # Optional: maximum number of connections in the connection pool
+  jpa:
+    hibernate:
+      ddl-auto: update  # Optional: Controls the schema generation behavior
+    show-sql: true  # Optional: Show SQL queries in the log
+    database-platform: org.hibernate.dialect.PostgreSQLDialect  # PostgreSQL dialect for Hibernate
+server:
+  port: 8082
+

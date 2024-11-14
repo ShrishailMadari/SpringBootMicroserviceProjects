@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: CustomerService
+  datasource:
+    url: jdbc:mysql://localhost:3306/customer
+    username: root
+    password: pass123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update   # Set to 'none' or 'validate' in production to prevent schema changes
+    show-sql: true       # Shows SQL queries in the console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8081
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ # URL of your Eureka server
+    register-with-eureka: true  # Ensures that the service registers itself
+    fetch-registry: true  # Allows the service to fetch the registry information
